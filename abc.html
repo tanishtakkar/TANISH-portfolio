@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tanish Takkar — Resume</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+
+  .resume {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #2563eb 100%);
+    color: #fff;
+    padding: 45px 50px 35px;
+    text-align: center;
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .header .tagline {
+    font-size: 15px;
+    font-weight: 400;
+    color: #cbd5e1;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 13.5px;
+  }
+
+  .contact a {
+    color: #93c5fd;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /* MAIN BODY */
+  .content {
+    padding: 35px 50px 45px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #0f172a;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    color: #374151;
+    text-align: justify;
+  }
+
+  /* SKILLS */
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .skill-tags span {
+    background: #eff6ff;
+    color: #1e3a8a;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12.5px;
+    font-weight: 500;
+    border: 1px solid #bfdbfe;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+  }
+
+  ul li {
+    font-size: 13.5px;
+    color: #374151;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+  ul li::before {
+    content: "▹";
+    color: #2563eb;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+
+  /* PROJECTS */
+  .project {
+    background: #f9fafb;
+    border-left: 4px solid #2563eb;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+  }
+
+  .project:hover {
+    transform: translateX(3px);
+  }
+
+  .project h3 {
+    color: #1e3a8a;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .project .flagship {
+    background: #fbbf24;
+    color: #78350f;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  .project p {
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 6px;
+  }
+
+  .focus {
+    font-size: 12px;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .focus span {
+    color: #4b5563;
+    font-weight: 500;
+  }
+
+  /* TWO-COLUMN SKILL LAYOUT */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    padding: 14px 50px;
+    text-align: center;
+    font-size: 12.5px;
+  }
+
+  .footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  /* PRINT OPTIMIZATION */
+  @media print {
+    body {
+      background: #fff;
+      padding: 0;
+    }
+    .resume {
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .project:hover {
+      transform: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="resume">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>TANISH TAKKAR</h1>
+    <div class="tagline">Aspiring Full Stack Developer • Market Strategist • Innovator</div>
+    <div class="contact">
+      <span>🔗 <a href="https://github.com/tanishtakkar" target="_blank">github.com/tanishtakkar</a></span>
+      <span>💼 <a href="https://www.linkedin.com/in/tanish-t-5a240827b" target="_blank">linkedin.com/in/tanish-t</a></span>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <p>A highly motivated student developer with a strong foundation in full-stack development, data-driven systems, and financial market intelligence. Passionate about applying analytical problem-solving and interdisciplinary thinking to build practical, user-centric digital solutions. Combines technical depth with strategic business acumen and a creative, innovation-driven mindset — dedicated to writing clean, maintainable code and engineering scalable workflows that deliver seamless, intuitive user experiences.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills & Technologies</h2>
+
+      <h3>Programming Languages & Core Tech</h3>
+      <div class="skill-tags">
+        <span>Java</span><span>Python</span><span>C++</span><span>JavaScript</span>
+        <span>HTML</span><span>CSS</span><span>DSA</span>
+      </div>
+
+      <h3>Tools & Platforms</h3>
+      <div class="skill-tags">
+        <span>GitHub</span><span>VS Code</span><span>APIs</span><span>Responsive Design</span>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>Technical & Analytical</h3>
+          <ul>
+            <li>Full-Stack Development</li>
+            <li>Data Analysis & Data-Driven Logic</li>
+            <li>Problem Solving & Algorithmic Thinking</li>
+            <li>Responsive & User-Centric UI Design</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Financial Markets & Trading</h3>
+          <ul>
+            <li>Advanced Discretionary Trading</li>
+            <li>Institutional / Hedge Fund Level Market Understanding</li>
+            <li>Elite Risk & Capital Management</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Business, Leadership & Strategy</h3>
+          <ul>
+            <li>Business Management and Leadership</li>
+            <li>Strategic Cognitive Simulation</li>
+            <li>Interdisciplinary Knowledge Synthesis</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Cognitive & Innovation</h3>
+          <ul>
+            <li>Creative & Divergent Thinking</li>
+            <li>Paradigm-Level Innovation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>MoneyForge — Entrepreneur Management Platform <span class="flagship">FLAGSHIP</span></h3>
+        <p>Engineered a comprehensive platform to streamline early-stage business setup by integrating expense tracking, financial management, and operational workflows into a single unified system. Simplified complex decision-making and enhanced operational efficiency through structured data handling and an intuitive, user-friendly design.</p>
+        <p class="focus">Focus Areas: <span>Full-Stack Development • Data Processing • Workflow Optimization • Responsive UI</span></p>
+      </div>
+
+      <div class="project">
+        <h3>Global Market Intelligence — Financial Insights Platform</h3>
+        <p>Developed a data-driven application providing actionable insights, trend analysis, and structured market data across global financial markets, including crypto and forex. Facilitated informed investment decisions by curating premium insights and delivering complex financial metrics through an accessible interface.</p>
+        <p class="focus">Focus Areas: <span>Data Analysis • Financial Metrics • Trend Pattern Recognition • API Integration</span></p>
+      </div>
+
+      <div class="project">
+        <h3>TradeWise AI — Import/Export Optimization System</h3>
+        <p>Architected an intelligent operational system for import-export businesses to manage GST-related processes, logistics optimization, and structured record keeping. Reduced manual overhead and improved supply chain efficiency through data-driven logic and automated workflow handling.</p>
+        <p class="focus">Focus Areas: <span>System Architecture • Logistics Optimization • Data-Driven Logic • Workflow Automation</span></p>
+      </div>
+
+      <div class="project">
+        <h3>Crime AI Analysis — Predictive Intelligence System</h3>
+        <p>Built a machine learning-based analytical tool to process structured crime datasets and identify behavioral patterns and geographical trends. Leveraged integrated APIs to generate predictive intelligence and enhance the understanding of incident correlations.</p>
+        <p class="focus">Focus Areas: <span>Python • Machine Learning Concepts • Data Analysis • API Integration</span></p>
+      </div>
+
+      <div class="project">
+        <h3>IoT-Based Parking System — Smart Automation Solution</h3>
+        <p>Created an IoT-enabled automation system utilizing sensor networks and real-time data processing to optimize parking space allocation. Improved facility management efficiency through continuous monitoring and automated operational alerts.</p>
+        <p class="focus">Focus Areas: <span>IoT Integration • Real-Time Data Processing • System Automation • Hardware-Software Interfacing</span></p>
+      </div>
+
+      <div class="project">
+        <h3>TiffinX Service — Food Delivery Platform</h3>
+        <p>Designed and deployed a responsive web-based food service platform focused on smooth order management and optimized user experience. Implemented modern delivery system principles to ensure seamless navigation and reliable service delivery.</p>
+        <p class="focus">Focus Areas: <span>Frontend Design • UI/UX • Order Management • Responsive Web Design</span></p>
+      </div>
+
+      <div class="project">
+        <h3>Expense Tracker — Personal Finance Tool</h3>
+        <p>Developed a streamlined financial application for tracking daily expenses and categorizing spending habits. Empowered users to maintain financial discipline through clear data visualization and structured financial monitoring.</p>
+        <p class="focus">Focus Areas: <span>Software Development • Data Categorization • User-Centric Design • Financial Logic</span></p>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <a href="https://github.com/tanishtakkar">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/tanish-t-5a240827b">LinkedIn</a>
+    <div style="margin-top:4px; font-size:11px; color:#94a3b8;">© 2025 Tanish Takkar — Crafted with precision.</div>
+  </div>
+
+</div>
+
+</body>
+</html>
